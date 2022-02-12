@@ -24,7 +24,7 @@ while '' in correct_word: # Keep looping until the word has been solved
 
     for i,letter in enumerate(accuracy): # Record the results of the guess
         if letter == '1': # If the letter is not in the word, remove it from possible letters
-            if guess[i] not in correct_letters:
+            if (guess[i] not in correct_letters) and (guess[i] in letterlist):
                 letterlist.remove(guess[i])
             incorrect_word[i] = ''
         if letter == '2': # If letter is in the word but not the correct position, add it to correct letters and incorrect word
