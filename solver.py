@@ -5,7 +5,7 @@ letterlist = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q
 correct_letters = '' # Letters that are confirmed to be in the word based on yellow letters
 correct_word = ['','','','',''] # Word that it must be based on position of green letters
 incorrect_word = ['','','','',''] # Word that it cannot be based on position of yellow letters
-guess = 'CRANE' # Initial guess
+guess = 'SOARE' # Initial guess
 
 with open('wordlist.txt', 'r') as list: # Import word list
     for line in list.readlines():
